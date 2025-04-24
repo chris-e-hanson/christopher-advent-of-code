@@ -16,7 +16,7 @@ Each day has its own directory containing:
 2. Run `npm install`
 3. To run a solution: `npx ts-node dayX/solution.ts`
 
-## Days Completed
+## Days Completed - https://adventofcode.com/2024
 
 - [Day 1](/day1): Problem description
 - [Day 2](/day2): Problem description
