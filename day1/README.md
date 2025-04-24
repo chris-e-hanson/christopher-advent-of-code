@@ -28,7 +28,7 @@ npx ts-node day1/solution.ts
 
 3. Testing the solution:
 ```cmd
-npm test day1/test.ts
+npx jest day1/test.ts
 ```
 
 ## Answer
