@@ -22,3 +22,4 @@ Each day has its own directory containing:
 - [Day 2](/day2): Problem description
 - [Day 3](/day3): Problem description
 - [Day 4](/day4): Problem description
+![Alt text](https://github.com/yourusername/your-repo-name/blob/main/advent-of-code.png?raw=true)
