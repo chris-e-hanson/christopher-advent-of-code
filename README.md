@@ -1,1 +1,33 @@
 # christopher-advent-of-code
+
+This repository contains my solutions to Advent of Code problems, implemented in TypeScript.
+
+## Structure
+
+Each day has its own directory containing:
+- `solution.ts`: The TypeScript solution code
+- `input.txt`: My personal input file (not committed)
+- `README.md`: Explanation of the solution approach
+- `test.ts`: Jest tests for the solution
+
+## Setup
+
+1. Clone the repository
+2. Run `npm install`
+3. To run a solution: `npx ts-node dayX/solution.ts`
+
+## Days Completed
+
+- [Day 1](/day1): Problem description
+- [Day 2](/day2): Problem description
+- ... (add more as you complete them)
+
+## AI Assistance
+
+I used AI tools in the following ways:
+- Generating boilerplate code
+- Suggesting algorithm optimizations
+- Explaining complex problem statements
+- Helping debug tricky edge cases
+
+Specific examples are noted in each day's README.
