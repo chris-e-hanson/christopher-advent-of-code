@@ -1,40 +1,44 @@
-# Day 4: Ceres Search - Solution
+# Advent of Code - Day 4: Ceres Search
 
 ## Problem Description
-Find all occurrences of "XMAS" in a word search grid where the word can appear:
-- In any of 8 possible directions (horizontal, vertical, diagonal)
-- Backwards or forwards
-- With overlapping instances
+
+### Part 1: XMAS Word Search
+Find all occurrences of the word "XMAS" in a grid where:
+- The word can appear in any of 8 directions (horizontal, vertical, diagonal)
+- The word can be written forwards or backwards
+- Overlapping instances should all be counted
+
+### Part 2: X-MAS Pattern Search
+Find all X-shaped patterns containing two "MAS" sequences where:
+- The center of the X must be 'M'
+- Both diagonals must form valid "MAS" or "SAM" sequences
+- The entire X pattern must fit within grid boundaries
 
 ## Solution Approach
 
-### 1. Grid Construction
-- Parses input into a 2D character grid
-```typescript
-input.trim().split('\n').map(line => line.split(''));
-```
+### Part 1 Implementation
+1. **Grid Scanning**: Searches for 'X' characters as potential starting points
+2. **Direction Checking**: For each 'X', checks all 8 possible directions
+3. **Sequence Validation**: Verifies subsequent 'M', 'A', 'S' characters
+4. **Counting**: Tracks all valid occurrences, including overlapping ones
 
-### 2. Search Algorithm
-For each cell in the grid:
-  - Checks if it starts with 'X'
-  - Searches in all 8 possible directions
-  - Verifies if the following letters match 'MAS'
-  - Counts all valid occurrences
+### Part 2 Implementation
+1. **Center Detection**: Identifies all 'M' characters as potential X centers
+2. **Diagonal Validation**: Checks both main diagonals from each center
+3. **Pattern Matching**: Validates "MAS" or "SAM" in both directions
+4. **Boundary Safety**: Ensures complete patterns fit within grid
+5. **Counting**: Only counts fully valid X patterns
 
-### 3. Direction Handling
-Uses direction vectors to search:
-```typescript
-const directions: Direction[] = [
-  [0, 1],   // Right
-  [1, 0],    // Down
-  [1, 1],    // Down-right
-  [1, -1],   // Down-left
-  [0, -1],   // Left
-  [-1, 0],   // Up
-  [-1, 1],   // Up-right
-  [-1, -1]   // Up-left
-];
-```
+## How to Run
+
+### Prerequisites
+- Node.js (v16+ recommended)
+- TypeScript
+- npm/yarn
+
+### Installation
+```bash
+npm install
 
 
 ### 4. Installation
@@ -53,4 +57,5 @@ npx jest day4/test.ts
 ```
 
 ## Answer
-2521
+Part 1: XMAS occurrences: 2521
+Part 2: X-MAS patterns: 1694

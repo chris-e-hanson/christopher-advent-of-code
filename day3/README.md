@@ -42,4 +42,5 @@ npx jest day3/test.ts
 ```
 
 ## Answer
-155955228
+Part 1: Sum of multiplications: 155955228
+Part 2: Sum of enabled multiplications: 100189366

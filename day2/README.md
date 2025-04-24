@@ -1,9 +1,14 @@
 # Day 2: Red-Nosed Reports - Solution
 
 ## Problem Description
-We need to analyze reactor reports to determine which ones are safe according to:
-1. Levels must be either strictly increasing or strictly decreasing
-2. Adjacent levels must differ by 1-3 (inclusive)
+
+### Part 1
+Identify safe reactor reports where:
+1. Levels are strictly increasing or decreasing
+2. Adjacent levels differ by 1-3 (inclusive)
+
+### Part 2 (Problem Dampener)
+Reports are also safe if removing one level would make them satisfy Part 1 rules.
 
 ## Solution Approach
 
@@ -29,6 +34,7 @@ For each report:
 ### 3. Counting Safe Reports
 - Filters all reports through safety check
 - Returns count of safe reports
+- For Part 2, checked safety of the list without single number with Part 1's safety check
 
 ## How to Run
 
@@ -52,4 +58,5 @@ npx jest day2/test.ts
 ```
 
 ## Answer
-213
+Part 1: Safe reports: 213
+Part 2: Safe reports with Problem Dampener: 285
