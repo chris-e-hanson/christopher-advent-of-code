@@ -20,7 +20,8 @@ Each day has its own directory containing:
 
 - [Day 1](/day1): Problem description
 - [Day 2](/day2): Problem description
-- ... (add more as you complete them)
+- [Day 3](/day3): Problem description
+- [Day 4](/day4): Problem description
 
 ## AI Assistance
 
